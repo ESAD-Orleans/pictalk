@@ -39,8 +39,8 @@ et voilà ça devrait être bon.
 
 #### Auteures
 
-Hélène Bigot
-Chloé Maurand
+- Hélène Bigot
+- Chloé Maurand
 
 #### Développement
 
