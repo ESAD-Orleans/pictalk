@@ -46,4 +46,4 @@ et voilà ça devrait être bon.
 
 #### Développement
 
-ESAD Orléans, [Arthur Violy](http://twitter.com/_panpan)
+- ESAD Orléans, [Arthur Violy](http://twitter.com/_panpan)
