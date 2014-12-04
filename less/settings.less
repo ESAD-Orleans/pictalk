@@ -1,0 +1,37 @@
+
+@selection-height: 120px;
+
+//
+//  Fonts
+//
+
+@fonts-path : '../fonts/';
+@icomoon-fontfamily : "icomoon";
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('@{fonts-path}icomoon.eot?-pc7ma3');
+  src: url('@{fonts-path}icomoon.eot?#iefix-pc7ma3') format('embedded-opentype'),
+  url('@{fonts-path}icomoon.woff?-pc7ma3') format('woff'),
+  url('@{fonts-path}icomoon.ttf?-pc7ma3') format('truetype'),
+  url('@{fonts-path}icomoon.svg?-pc7ma3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="pictalk"], [class*="pictalk"] {
+  @media aural{
+    speak: none;
+  }
+  font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

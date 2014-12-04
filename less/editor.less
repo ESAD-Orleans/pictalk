@@ -1,0 +1,222 @@
+.characters-set,
+#editorselection {
+  width: 100%;
+  position: absolute;
+
+}
+
+.char{
+  font-family: @icomoon-fontfamily;
+}
+
+.characters-set {
+  top: 0;
+  bottom: @selection-height;
+  .sub-set {
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow: scroll;
+    &.center{
+      width:600px;
+      max-width: 50%;
+      position: absolute;
+      bottom: 0;
+      border: solid 1px #000;
+      border-bottom: none;
+      left:0;
+      right:0;
+      background: #fff;
+      margin: auto;
+      float: none;
+      font-size:40px;
+      height:40px;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      line-height: 1em;
+      padding: 20px;
+      .char{
+        padding: 0px;
+        margin: 0px 10px 0 0;
+        font-size:40px;
+        line-height:40px;
+        background: none;
+      }
+    }
+  }
+  .char {
+    background: #eee;
+    float: left;
+    padding: 10px;
+    margin: 30px;
+    font-size: 60px;
+    cursor: pointer;
+    transition:.3s;
+
+  }
+
+  .char-box {
+    float: left;
+    width:140px;
+    position: relative;
+    transition:.3s;
+    border:solid 1px transparent;
+
+    input, button {
+      float: left;
+      width:100%;
+      text-align: center;
+      border-top: solid #ccc 1px;
+      font-size:11px;
+      line-height: 1em;
+      padding: .5em 0;
+      transition: .3s;
+    }
+    input{
+      &::-webkit-input-placeholder {  -webkit-transition:.3s;}
+      &:-moz-placeholder { -moz-transition: .3s;}
+      &::-moz-placeholder { -moz-transition: .3s;}
+      &:-ms-input-placeholder { -ms-transition: .3s;}
+      &:focus{
+        &::-webkit-input-placeholder {  color: transparent; }
+        &:-moz-placeholder {  color: transparent; }
+        &::-moz-placeholder {  color: transparent; }
+        &:-ms-input-placeholder {  color: transparent; }
+      }
+    }
+    button{
+      &:hover{
+        background: #ccc;
+      }
+    }
+    form {
+      float: left;
+      width:100%;
+      opacity: 0;
+      visibility: hidden;
+      transition:.3s;
+      //
+    }
+    &:hover {
+      border:solid 1px #ccc;
+      .char {
+        transform: scale(1.5);
+      }
+      form{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+#editorselection {
+  background: #eee;
+  height: @selection-height;
+  bottom: 0;
+  line-height: @selection-height;
+  font-size: 60px;
+  box-sizing: border-box;
+  .prompt{
+    font-family: @icomoon-fontfamily;
+    letter-spacing: 20px;
+    background: transparent;
+    border:none;
+    outline: none;
+    line-height: @selection-height;
+    height: @selection-height;
+    text-indent: 20px;
+    position: absolute;
+    left:0;
+    right:200px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    opacity: .8;
+  }
+  .separator {
+    width: 10px;
+    display: block;
+    float: left;
+    position: relative;
+    background: #000;
+    height: 100%;
+    margin: auto auto auto 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .3s;
+  }
+  .char:hover + .separator, .separator:hover{
+    opacity: .3;
+  }
+  .char, .char-box{
+    float: left;
+    cursor: default;
+  }
+  .char-box{
+    position: relative;
+    button.delete{
+      width:20px;
+      height:20px;
+      position: absolute;
+      top:5px;
+      right:-5px;
+      text-align: center;
+      font-size: 10px;
+      line-height: 10px;
+      padding: 5px;
+      border-radius: 5px;
+      background: #000;
+      color:#fff;
+      transition:.3s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 2;
+      &:before{
+        content:'✕';
+        font-family: Arial,sans-serif;
+      }
+      &:hover{
+        background: #f06;
+      }
+    }
+    .char{
+      height: 1.6em;
+      width: auto;
+      line-height: 1.6em;
+      display: inline-block;
+      text-align: center;
+      margin: .2em 0;
+      transition:.3s;
+    }
+    &:hover{
+      button.delete{
+        visibility: visible;
+        opacity: 1;
+      }
+      .char{
+        background: #fff;
+      }
+    }
+  }
+  button.submit{
+    font-size:30px;
+    background: #999;
+    color:#fff;
+    transition:.3s;
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    right:0;
+    display: block;
+    line-height: @selection-height;
+    &:hover{
+      background: #000;
+    }
+  }
+
+}

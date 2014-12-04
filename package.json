@@ -1,0 +1,24 @@
+{
+  "name": "pictalk",
+  "version": "0.0.0",
+  "description": "pictalk = pic + talk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arthur Violy",
+  "license": "License Art Libre",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^2.0.0",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-browserify": "^3.2.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0"
+  },
+  "dependencies": {
+    "grunt-contrib-less": "^0.12.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

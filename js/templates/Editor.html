@@ -1,0 +1,25 @@
+
+<% function charBox(i){ %>
+
+<div class="char-box">
+	<div class="char char-code-<%= i %>">&#x<%= (58880+i).toString(16) %>;</div>
+	<form>
+		<input class="code" type="hidden" value="&#x<%= (58880+i).toString(16) %>;"/>
+		<input class="content" type="text" class="content" placeholder="???" />
+		<button class="add">ajouter</button>
+	</form>
+</div>
+
+<% } %>
+
+<div class="characters-set">
+	<div class="sub-set"><% for(var i=0; i<195; i++){ charBox(i); } %>
+	</div>
+	<div class="sub-set"><% for(var i=0; i<256; i++){ charBox(i+195); } %>
+	</div>
+	<div class="sub-set center"><% for(var i=54; i<66; i++){ %>
+		<div class="char char-code-<%= i %>">&#x<%= (58880+i+195).toString(16) %>;</div>
+		<% } %></div>
+</div>
+<div id="editorselection">
+</div>
