@@ -1,4 +1,4 @@
-
+<div id="editor">
 <% function charBox(i){ %>
 
 <div class="char-box">
@@ -12,14 +12,16 @@
 
 <% } %>
 
-<div class="characters-set">
-	<div class="sub-set"><% for(var i=0; i<195; i++){ charBox(i); } %>
+	<div class="characters-set">
+		<div class="sub-set"><% for(var i=0; i<195; i++){ charBox(i); } %>
+		</div>
+		<div class="sub-set"><% for(var i=0; i<256; i++){ charBox(i+195); } %>
+		</div>
+		<div class="sub-set center"><% for(var i=54; i<66; i++){ %>
+			<div class="char char-code-<%= i %>">&#x<%= (58880+i+195).toString(16) %>;</div>
+			<% } %></div>
 	</div>
-	<div class="sub-set"><% for(var i=0; i<256; i++){ charBox(i+195); } %>
+	<!-- selection -->
+	<div id="editorselection">
 	</div>
-	<div class="sub-set center"><% for(var i=54; i<66; i++){ %>
-		<div class="char char-code-<%= i %>">&#x<%= (58880+i+195).toString(16) %>;</div>
-		<% } %></div>
-</div>
-<div id="editorselection">
 </div>

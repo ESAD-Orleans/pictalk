@@ -2,11 +2,12 @@
 // 2014
 // EditorSelectionView Backbone View
 //
-define(['underscore', 'jquery', 'backbone','text!templates/EditorSelection.html', 'Sortable'], function (_, $, Backbone, template, Sortable) {
+define(['underscore', 'jquery', 'backbone','router','text!templates/EditorSelection.html', 'Sortable'], function (_, $, Backbone, router, template, Sortable) {
 	return Backbone.View.extend({
 
 		template: _.template(template),
 		events:{
+			'submit':'submit',
 			'click .delete':'deleteChar'
 		},
 		initialize:function(){
@@ -45,6 +46,10 @@ define(['underscore', 'jquery', 'backbone','text!templates/EditorSelection.html'
 		deleteChar:function(e){
 			var i = $(e.currentTarget).parent().index();
 			this.model.removeIndex(i);
+		},
+		submit:function(){
+			router.go(router.PATHS.SHARE+'/'+this.model.message());
+			return false;
 		}
 
 	});

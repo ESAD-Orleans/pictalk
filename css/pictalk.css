@@ -713,7 +713,7 @@ textarea {
 #editorselection .char-box:hover .char {
   background: #fff;
 }
-#editorselection button.submit {
+#editorselection [type=submit] {
   font-size: 30px;
   background: #999;
   color: #fff;
@@ -726,8 +726,29 @@ textarea {
   display: block;
   line-height: 120px;
 }
-#editorselection button.submit:hover {
+#editorselection [type=submit]:hover {
   background: #000;
+}
+.page {
+  background: #eee;
+  padding: 20px;
+  width: 500px;
+  margin: 50px auto;
+}
+.share-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 400px;
+  text-align: center;
+}
+.share-page .message {
+  font-family: "icomoon";
+  font-size: 60px;
+  letter-spacing: 10px;
 }
 html,
 body,

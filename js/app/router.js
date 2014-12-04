@@ -8,9 +8,11 @@ define(['backbone'], function (Backbone) {
 		PAGE : 'page:',
 		HOME : 'home',
 		CREATE : 'create',
+		SHARE : 'share',
 		ME : 'me',
 		HELP : 'help',
-		ABOUT : 'about'
+		ABOUT : 'about',
+		PREVIEW : 'create/preview/:preview'
 	};
 
 	var Router = Backbone.Router.extend({
@@ -18,11 +20,9 @@ define(['backbone'], function (Backbone) {
 		PATHS: PATHS,
 
 		routes:{
-			'': PATHS.PAGE+PATHS.HOME,
-			'create': PATHS.CREATE,
-			'me': PATHS.ME,
-			'help': PATHS.PAGE+PATHS.HELP,
-			'about': PATHS.PAGE +PATHS.ABOUT
+			'': 'page',
+			':page/:option':'page',
+			':page':'page'
 		},
 		go:function(route){
 			this.navigate(route,{trigger:true})

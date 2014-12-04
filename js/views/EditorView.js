@@ -5,7 +5,7 @@
 define(['underscore', 'jquery', 'backbone', 'router', 'views/EditorSelectionView', 'text!templates/Editor.html'], function (_, $, Backbone,router, EditorSelectionView, template) {
 	return Backbone.View.extend({
 		template: _.template(template),
-		el:'#editor',
+		el:'#main',
 		events:{
 			'click .characters-set .char':'clickChar',
 			'submit .char-box form':'submitChar'
@@ -14,6 +14,7 @@ define(['underscore', 'jquery', 'backbone', 'router', 'views/EditorSelectionView
 			//
 			router.on('route',this.route,this);
 			//
+			this.render();
 
 		},
 		render:function(){
@@ -26,7 +27,7 @@ define(['underscore', 'jquery', 'backbone', 'router', 'views/EditorSelectionView
 					this.render();
 					break;
 				default:
-					console.log(route);
+					//console.log(route);
 			}
 		},
 		submitChar:function(e){
