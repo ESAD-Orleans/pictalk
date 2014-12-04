@@ -2,6 +2,8 @@
 
 pictalk est un projet mené dans l’ARC édition nouvelles formes, à l’[ESAD Orléans](http://esad-orléans.fr). 
 
+Une version de démonstration est accessible à cette adresse : [esad-orleans.github.io/pictalk](http://esad-orleans.github.io/pictalk/)
+
 ## Installation
 
 #### prérequis
