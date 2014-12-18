@@ -17,7 +17,7 @@ define(['router','underscore', 'jquery', 'backbone', 'views/MainMenuView', 'view
 		},
 		route:function(r,options, parameters){
 			var view = null;
-			console.log(r, options, parameters);
+			//console.log(r, options, parameters);
 
 			switch(r){
 					//

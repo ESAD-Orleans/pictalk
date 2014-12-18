@@ -10,7 +10,7 @@ define(['underscore', 'jquery', 'backbone', 'underscore.string'], function (_, $
 			selectionEnd:0
 		},
 		message:function(s){
-			if(s){this.set('message',s)}
+			if(!_.isUndefined(s)){this.set('message',s)}
 			return this.get('message');
 		},
 		messageLetters:function(){
@@ -21,7 +21,7 @@ define(['underscore', 'jquery', 'backbone', 'underscore.string'], function (_, $
 		},
 		removeIndex:function(i){
 			var m = this.message();
-			this.message(m.slice(0,i)+ m.slice(i + 1, m.length));
+			this.message(_.str.splice(m, i, 1));
 		},
 		moveIndex:function(from,to){
 			var m = this.message(),

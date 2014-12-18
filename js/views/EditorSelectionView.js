@@ -46,8 +46,10 @@ define(['underscore', 'jquery', 'backbone','router','text!templates/EditorSelect
 		deleteChar:function(e){
 			var i = $(e.currentTarget).parent().index();
 			this.model.removeIndex(i);
+			return false;
 		},
-		submit:function(){
+		submit:function(e){
+			console.log('submit');
 			router.go(router.PATHS.SHARE+'/'+this.model.message());
 			return false;
 		}
