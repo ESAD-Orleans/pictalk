@@ -474,7 +474,7 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
 }
 @media aural {
-  [class^="pictalk"],
+  [class^=" pictalk"],
   [class*="pictalk"] {
     speak: none;
   }
@@ -561,7 +561,7 @@ textarea {
 .characters-set .char-box input,
 .characters-set .char-box button {
   float: left;
-  width: 100%;
+  width: 100%;w
   text-align: center;
   border-top: solid #ccc 1px;
   font-size: 11px;
