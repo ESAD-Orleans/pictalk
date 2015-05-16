@@ -541,10 +541,10 @@ textarea {
   background: none;
 }
 .characters-set .char {
-  float: left;
-  padding: 10px;
+  display:inline-block;
+  padding: 0px;
   margin: 30px;
-  font-size: 60px;
+  font-size: 90px;
   cursor: pointer;
   -webkit-transition: .3s;
           transition: .3s;
@@ -556,6 +556,7 @@ textarea {
   -webkit-transition: .3s;
           transition: .3s;
   border: solid 1px transparent;
+    text-align: center;
 }
 .characters-set .char-box input,
 .characters-set .char-box button {
@@ -608,9 +609,9 @@ textarea {
   border: solid 1px #ccc;
 }
 .characters-set .char-box:hover .char {
-  -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
 }
 .characters-set .char-box:hover form {
   opacity: 1;
