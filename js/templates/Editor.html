@@ -13,12 +13,12 @@
 <% } %>
 
 	<div class="characters-set">
-		<div class="sub-set"><% for(var i=0; i<195; i++){ charBox(i); } %>
+		<div class="sub-set"><% for(var i=0; i<75; i++){ charBox(i); } %>
 		</div>
-		<div class="sub-set"><% for(var i=0; i<256; i++){ charBox(i+195); } %>
+		<div class="sub-set"><% for(var i=0; i<31; i++){ charBox(i+75); } %>
 		</div>
-		<div class="sub-set center"><% for(var i=54; i<66; i++){ %>
-			<div class="char char-code-<%= i %>">&#x<%= (58880+i+195).toString(16) %>;</div>
+		<div class="sub-set center"><% for(var i=106; i<116; i++){ %>
+			<div class="char char-code-<%= i %>">&#x<%= (58880+i).toString(16) %>;</div>
 			<% } %></div>
 	</div>
 	<!-- selection -->

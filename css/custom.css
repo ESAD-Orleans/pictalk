@@ -6,3 +6,15 @@
 
 body{
 }
+
+
+#editor{
+    height: calc(100vh - 100px);
+    top:100px;
+    position: relative;
+}
+
+.characters-set .sub-set.center{
+    max-width: 90%;
+    width:640px;
+}
