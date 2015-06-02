@@ -18,8 +18,8 @@
     float: left;
     overflow: scroll;
     &.center{
-      width:600px;
-      max-width: 50%;
+      max-width: 90%;
+      width: 640px;
       position: absolute;
       bottom: 0;
       border: solid 1px #000;
@@ -45,14 +45,12 @@
     }
   }
   .char {
-    background: #eee;
-    float: left;
-    padding: 10px;
+    display: inline-block;
+    padding: 0px;
     margin: 30px;
-    font-size: 60px;
+    font-size: 90px;
     cursor: pointer;
     transition:.3s;
-
   }
 
   .char-box {
@@ -61,6 +59,7 @@
     position: relative;
     transition:.3s;
     border:solid 1px transparent;
+    text-align: center;
 
     input, button {
       float: left;
@@ -100,7 +99,7 @@
     &:hover {
       border:solid 1px #ccc;
       .char {
-        transform: scale(1.5);
+        transform: scale(2);
       }
       form{
         opacity: 1;
