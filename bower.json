@@ -28,5 +28,7 @@
     "requirejs-plugins": "~1.0.2",
     "Sortable": "~0.7.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gzip-js": "*"
+  }
 }

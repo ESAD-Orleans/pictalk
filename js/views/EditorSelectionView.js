@@ -50,7 +50,8 @@ define(['underscore', 'jquery', 'backbone','router','text!templates/EditorSelect
 		},
 		submit:function(e){
 			console.log('submit');
-			router.go(router.PATHS.SHARE+'/'+this.model.message());
+			console.log(this.model.messageHexEncoded());
+			router.go(router.PATHS.SHARE+'/'+this.model.messageHexEncoded());
 			return false;
 		}
 

@@ -16,6 +16,17 @@ define(['underscore', 'jquery', 'backbone', 'underscore.string'], function (_, $
 		messageLetters:function(){
 			return _(this.message().split(''));
 		},
+		messageHexEncoded:function() {
+			var hexMessage = "",
+				hexChar = 0;
+			_(this.message()).each(function(char,i){
+				var code = char.charCodeAt(0)-58880+1,
+					hex = code.toString(16);
+				// encode on 12 bytes
+				hexMessage+= (hex.length<2?'0':'')+hex;//console.log(hexPad);
+			});
+			return hexMessage;
+		},
 		addChar:function(c){
 			this.message(this.message()+c);
 		},
