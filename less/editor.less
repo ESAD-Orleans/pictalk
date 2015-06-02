@@ -17,7 +17,16 @@
     height: 100%;
     float: left;
     overflow: scroll;
+    &:after{
+      content:' ';
+      height:30vh;
+      width:100%;
+      float:left;
+    }
     &.center{
+      &:after{
+        content:none;
+      }
       max-width: 90%;
       width: 640px;
       position: absolute;
