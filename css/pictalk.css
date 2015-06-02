@@ -490,11 +490,26 @@ textarea {
 #mainmenu .menu {
   float: left;
   display: block;
-  padding: 0 10px 0 0;
+  padding: 0 20px 0 0;
+  outline: none;
 }
 #mainmenu .menu.right {
   float: right;
-  padding: 0 0 0 10px;
+}
+#mainmenu .menu.logo {
+  float: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 134px;
+  padding: 0;
+}
+#mainmenu .menu.last {
+  padding-right: 0;
+}
+#mainmenu .menu:first-child {
+  padding-left: 0;
 }
 .characters-set,
 #editorselection {
@@ -715,8 +730,9 @@ textarea {
 }
 #editorselection [type=submit] {
   font-size: 30px;
-  background: #999;
-  color: #fff;
+  background: #999999 url(../img/ok.svg) center center no-repeat;
+  background-size: 100px;
+  color: transparent;
   -webkit-transition: .3s;
           transition: .3s;
   text-align: center;
@@ -727,12 +743,12 @@ textarea {
   line-height: 120px;
 }
 #editorselection [type=submit]:hover {
-  background: #000;
+  background-size: 60px;
+  background-color: #aaa;
 }
 .page {
-  background: #eee;
   padding: 20px;
-  width: 500px;
+  width: 100%;
   margin: 50px auto;
 }
 .share-page {

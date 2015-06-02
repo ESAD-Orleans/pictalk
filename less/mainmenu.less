@@ -15,12 +15,27 @@
     // boutons du menu
     float: left;
     display: block;
-    padding: 0 10px 0 0;
+    padding: 0 20px 0 0;
+    outline: none;
     //
     // boutons du menu à droite
     &.right{
       float: right;
-      padding: 0 0 0 10px;
+    }
+    &.logo{
+      float:none;
+      position:absolute;
+      left:0;
+      right:0;
+      margin:auto;
+      width: 134px;
+      padding: 0;
+    }
+    &.last{
+      padding-right: 0;
+    }
+    &:first-child{
+      padding-left: 0;
     }
   }
 }
