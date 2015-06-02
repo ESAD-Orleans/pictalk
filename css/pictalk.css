@@ -751,6 +751,12 @@ textarea {
   width: 100%;
   margin: 50px auto;
 }
+.page img {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  position: relative;
+}
 .share-page {
   position: absolute;
   top: 0;
