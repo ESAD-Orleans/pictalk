@@ -4,23 +4,23 @@
       opacity: 0;
       visibility: hidden;
     }
-    40%{
+    60%{
       transform: scale(1) translate3d(0,0,0);
       opacity: 1;
       visibility: visible;
     }
-    50%{
+    70%{
       transform: scale(1.2) translate3d(0, 0, 200px);
       opacity: 0;
       visibility: hidden;
     }
-    51%{
+    71%{
       transform: scale(.5) translate3d(0, 0, -1000px);
       opacity: 0;
       visibility: hidden;
     }
     100%{
-
+      visibility: hidden;
     }
 
 }
@@ -28,6 +28,7 @@
 .page.me{
   height:~"calc(100vh - 100px)";
   position:relative;
+  overflow:hidden;
   .word{
     font-size:100px;
     position:absolute;
@@ -45,6 +46,7 @@
     animation-direction: both;
     animation-iteration-count: infinite;
     opacity: 0;
+    text-shadow: 0 0 20px #fff;
     .loop(@counter) when (@counter > 0) {
       .loop((@counter - 1)); // next iteration
       &.n-@{counter}{
@@ -52,22 +54,13 @@
         animation-delay: @delay;
         //
         .tr{
-          @getRandomX : `Math.round(Math.random()*60-30)`;
-          @getRandomY : `Math.round(Math.random()*60-30)`;
+          @getRandomX : `Math.round(Math.random()*100-50)`;
+          @getRandomY : `Math.round(Math.random()*80-40)`;
           transform: translate(~"@{getRandomX}vw,@{getRandomY}vh");
 
         }
       }
     }
-    .loop(20);
-    /*
-    .loop(@counter) when (@counter > 0){
-      .loop((@counter-1));
-      &.n-@{counter}{
-        .tr{
-        }
-      }
-    }
-    */
+    .loop(30);
   }
 }
