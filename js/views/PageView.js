@@ -5,11 +5,12 @@
 define(['underscore', 'jquery', 'backbone',
 	'text!templates/pages/home.html',
 	'text!templates/pages/help.html',
-	'text!templates/pages/about.html'
+	'text!templates/pages/about.html',
+	'text!templates/pages/me.html'
 ], function (_, $, Backbone) {
 	return Backbone.View.extend({
 		el:'#main',
-		template: _.template('<div class="page"><%= content %></div>'),
+		template: _.template('<div class="page <%= pagename %>"><%= content %></div>'),
 		initialize:function(o){
 			console.log(o)
 			this.options = o;
@@ -17,7 +18,7 @@ define(['underscore', 'jquery', 'backbone',
 		},
 		render:function(){
 			var content = require('text!templates/pages/'+this.options.pagename+'.html');
-			this.$el.html(this.template({content:_.template(content)()}));
+			this.$el.html(this.template({pagename:this.options.pagename,content:_.template(content)()}));
 		}
 	});
 });

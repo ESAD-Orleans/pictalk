@@ -759,12 +759,281 @@ textarea {
   padding: 20px;
   width: 100%;
   margin: 50px auto;
+  box-sizing: border-box;
 }
 .page img {
   max-width: 100%;
   margin: auto;
   display: block;
   position: relative;
+}
+@-webkit-keyframes fromBackground {
+  0% {
+    -webkit-transform: scale(0.5) translate3d(0, 0, -1000px);
+            transform: scale(0.5) translate3d(0, 0, -1000px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  40% {
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
+            transform: scale(1) translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    -webkit-transform: scale(1.2) translate3d(0, 0, 200px);
+            transform: scale(1.2) translate3d(0, 0, 200px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  51% {
+    -webkit-transform: scale(0.5) translate3d(0, 0, -1000px);
+            transform: scale(0.5) translate3d(0, 0, -1000px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fromBackground {
+  0% {
+    -webkit-transform: scale(0.5) translate3d(0, 0, -1000px);
+            transform: scale(0.5) translate3d(0, 0, -1000px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  40% {
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
+            transform: scale(1) translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    -webkit-transform: scale(1.2) translate3d(0, 0, 200px);
+            transform: scale(1.2) translate3d(0, 0, 200px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  51% {
+    -webkit-transform: scale(0.5) translate3d(0, 0, -1000px);
+            transform: scale(0.5) translate3d(0, 0, -1000px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.page.me {
+  height: calc(100vh - 100px);
+  position: relative;
+}
+.page.me .word {
+  font-size: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  letter-spacing: -0.2em;
+  text-align: center;
+  margin: auto;
+  height: 1em;
+  -webkit-animation: fromBackground 10s;
+          animation: fromBackground 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-direction: both;
+          animation-direction: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 0
+  /*
+    .loop(@counter) when (@counter > 0){
+      .loop((@counter-1));
+      &.n-@{counter}{
+        .tr{
+        }
+      }
+    }
+    */
+}
+.page.me .word.n-1 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.page.me .word.n-1 .tr {
+  -webkit-transform: translate(-18vw,-24vh);
+      -ms-transform: translate(-18vw,-24vh);
+          transform: translate(-18vw,-24vh);
+}
+.page.me .word.n-2 {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.page.me .word.n-2 .tr {
+  -webkit-transform: translate(11vw,-26vh);
+      -ms-transform: translate(11vw,-26vh);
+          transform: translate(11vw,-26vh);
+}
+.page.me .word.n-3 {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.page.me .word.n-3 .tr {
+  -webkit-transform: translate(8vw,-14vh);
+      -ms-transform: translate(8vw,-14vh);
+          transform: translate(8vw,-14vh);
+}
+.page.me .word.n-4 {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+.page.me .word.n-4 .tr {
+  -webkit-transform: translate(3vw,21vh);
+      -ms-transform: translate(3vw,21vh);
+          transform: translate(3vw,21vh);
+}
+.page.me .word.n-5 {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+.page.me .word.n-5 .tr {
+  -webkit-transform: translate(11vw,-8vh);
+      -ms-transform: translate(11vw,-8vh);
+          transform: translate(11vw,-8vh);
+}
+.page.me .word.n-6 {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+.page.me .word.n-6 .tr {
+  -webkit-transform: translate(26vw,3vh);
+      -ms-transform: translate(26vw,3vh);
+          transform: translate(26vw,3vh);
+}
+.page.me .word.n-7 {
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+.page.me .word.n-7 .tr {
+  -webkit-transform: translate(28vw,-25vh);
+      -ms-transform: translate(28vw,-25vh);
+          transform: translate(28vw,-25vh);
+}
+.page.me .word.n-8 {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+.page.me .word.n-8 .tr {
+  -webkit-transform: translate(14vw,-6vh);
+      -ms-transform: translate(14vw,-6vh);
+          transform: translate(14vw,-6vh);
+}
+.page.me .word.n-9 {
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+.page.me .word.n-9 .tr {
+  -webkit-transform: translate(-16vw,-26vh);
+      -ms-transform: translate(-16vw,-26vh);
+          transform: translate(-16vw,-26vh);
+}
+.page.me .word.n-10 {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+.page.me .word.n-10 .tr {
+  -webkit-transform: translate(-10vw,-24vh);
+      -ms-transform: translate(-10vw,-24vh);
+          transform: translate(-10vw,-24vh);
+}
+.page.me .word.n-11 {
+  -webkit-animation-delay: 22s;
+          animation-delay: 22s;
+}
+.page.me .word.n-11 .tr {
+  -webkit-transform: translate(-4vw,26vh);
+      -ms-transform: translate(-4vw,26vh);
+          transform: translate(-4vw,26vh);
+}
+.page.me .word.n-12 {
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+}
+.page.me .word.n-12 .tr {
+  -webkit-transform: translate(13vw,-16vh);
+      -ms-transform: translate(13vw,-16vh);
+          transform: translate(13vw,-16vh);
+}
+.page.me .word.n-13 {
+  -webkit-animation-delay: 26s;
+          animation-delay: 26s;
+}
+.page.me .word.n-13 .tr {
+  -webkit-transform: translate(-10vw,-18vh);
+      -ms-transform: translate(-10vw,-18vh);
+          transform: translate(-10vw,-18vh);
+}
+.page.me .word.n-14 {
+  -webkit-animation-delay: 28s;
+          animation-delay: 28s;
+}
+.page.me .word.n-14 .tr {
+  -webkit-transform: translate(11vw,-3vh);
+      -ms-transform: translate(11vw,-3vh);
+          transform: translate(11vw,-3vh);
+}
+.page.me .word.n-15 {
+  -webkit-animation-delay: 30s;
+          animation-delay: 30s;
+}
+.page.me .word.n-15 .tr {
+  -webkit-transform: translate(-3vw,24vh);
+      -ms-transform: translate(-3vw,24vh);
+          transform: translate(-3vw,24vh);
+}
+.page.me .word.n-16 {
+  -webkit-animation-delay: 32s;
+          animation-delay: 32s;
+}
+.page.me .word.n-16 .tr {
+  -webkit-transform: translate(17vw,-17vh);
+      -ms-transform: translate(17vw,-17vh);
+          transform: translate(17vw,-17vh);
+}
+.page.me .word.n-17 {
+  -webkit-animation-delay: 34s;
+          animation-delay: 34s;
+}
+.page.me .word.n-17 .tr {
+  -webkit-transform: translate(4vw,-4vh);
+      -ms-transform: translate(4vw,-4vh);
+          transform: translate(4vw,-4vh);
+}
+.page.me .word.n-18 {
+  -webkit-animation-delay: 36s;
+          animation-delay: 36s;
+}
+.page.me .word.n-18 .tr {
+  -webkit-transform: translate(-29vw,4vh);
+      -ms-transform: translate(-29vw,4vh);
+          transform: translate(-29vw,4vh);
+}
+.page.me .word.n-19 {
+  -webkit-animation-delay: 38s;
+          animation-delay: 38s;
+}
+.page.me .word.n-19 .tr {
+  -webkit-transform: translate(-28vw,16vh);
+      -ms-transform: translate(-28vw,16vh);
+          transform: translate(-28vw,16vh);
+}
+.page.me .word.n-20 {
+  -webkit-animation-delay: 40s;
+          animation-delay: 40s;
+}
+.page.me .word.n-20 .tr {
+  -webkit-transform: translate(28vw,17vh);
+      -ms-transform: translate(28vw,17vh);
+          transform: translate(28vw,17vh);
 }
 .share-page {
   position: absolute;

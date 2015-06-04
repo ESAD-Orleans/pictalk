@@ -39,6 +39,7 @@ define(['router','underscore', 'jquery', 'backbone', 'views/MainMenuView', 'view
 					// force home route
 					r = router.PATHS.HOME;
 				case router.PATHS.ABOUT :
+				case router.PATHS.ME :
 				case router.PATHS.HELP :
 					this.display(PageView,{pagename:r});
 					break;

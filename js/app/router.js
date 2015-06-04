@@ -27,7 +27,7 @@ define(['backbone'], function (Backbone) {
 		go:function(route){
 			this.navigate(route,{trigger:true})
 		}
-	})
+	});
 
 	return new Router();
 });
