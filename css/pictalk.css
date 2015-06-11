@@ -765,6 +765,7 @@ textarea {
 }
 .page img {
   max-width: 100%;
+  height: auto;
   margin: auto;
   display: block;
   position: relative;
@@ -827,12 +828,19 @@ textarea {
     visibility: hidden;
   }
 }
-.page.me {
+.page.home {
+  width: 100%;
   height: calc(100vh - 100px);
   position: relative;
+  padding: 0;
+}
+.infinite-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
-.page.me .word {
+.infinite-animation .word {
   font-size: 100px;
   position: absolute;
   top: 0;
@@ -856,275 +864,275 @@ textarea {
   opacity: 0;
   text-shadow: 0 0 20px #fff;
 }
-.page.me .word.n-1 {
+.infinite-animation .word.n-1 {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-.page.me .word.n-1 .tr {
-  -webkit-transform: translate(-6vw,-37vh);
-      -ms-transform: translate(-6vw,-37vh);
-          transform: translate(-6vw,-37vh);
+.infinite-animation .word.n-1 .tr {
+  -webkit-transform: translate(-46vw,-3vh);
+      -ms-transform: translate(-46vw,-3vh);
+          transform: translate(-46vw,-3vh);
 }
-.page.me .word.n-2 {
+.infinite-animation .word.n-2 {
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }
-.page.me .word.n-2 .tr {
-  -webkit-transform: translate(10vw,-14vh);
-      -ms-transform: translate(10vw,-14vh);
-          transform: translate(10vw,-14vh);
+.infinite-animation .word.n-2 .tr {
+  -webkit-transform: translate(-34vw,29vh);
+      -ms-transform: translate(-34vw,29vh);
+          transform: translate(-34vw,29vh);
 }
-.page.me .word.n-3 {
+.infinite-animation .word.n-3 {
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
 }
-.page.me .word.n-3 .tr {
-  -webkit-transform: translate(-32vw,10vh);
-      -ms-transform: translate(-32vw,10vh);
-          transform: translate(-32vw,10vh);
+.infinite-animation .word.n-3 .tr {
+  -webkit-transform: translate(1vw,-17vh);
+      -ms-transform: translate(1vw,-17vh);
+          transform: translate(1vw,-17vh);
 }
-.page.me .word.n-4 {
+.infinite-animation .word.n-4 {
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
 }
-.page.me .word.n-4 .tr {
-  -webkit-transform: translate(-3vw,26vh);
-      -ms-transform: translate(-3vw,26vh);
-          transform: translate(-3vw,26vh);
+.infinite-animation .word.n-4 .tr {
+  -webkit-transform: translate(-38vw,-13vh);
+      -ms-transform: translate(-38vw,-13vh);
+          transform: translate(-38vw,-13vh);
 }
-.page.me .word.n-5 {
+.infinite-animation .word.n-5 {
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
 }
-.page.me .word.n-5 .tr {
-  -webkit-transform: translate(-28vw,20vh);
-      -ms-transform: translate(-28vw,20vh);
-          transform: translate(-28vw,20vh);
+.infinite-animation .word.n-5 .tr {
+  -webkit-transform: translate(-27vw,19vh);
+      -ms-transform: translate(-27vw,19vh);
+          transform: translate(-27vw,19vh);
 }
-.page.me .word.n-6 {
+.infinite-animation .word.n-6 {
   -webkit-animation-delay: 12s;
           animation-delay: 12s;
 }
-.page.me .word.n-6 .tr {
-  -webkit-transform: translate(16vw,-6vh);
-      -ms-transform: translate(16vw,-6vh);
-          transform: translate(16vw,-6vh);
+.infinite-animation .word.n-6 .tr {
+  -webkit-transform: translate(-32vw,20vh);
+      -ms-transform: translate(-32vw,20vh);
+          transform: translate(-32vw,20vh);
 }
-.page.me .word.n-7 {
+.infinite-animation .word.n-7 {
   -webkit-animation-delay: 14s;
           animation-delay: 14s;
 }
-.page.me .word.n-7 .tr {
-  -webkit-transform: translate(-44vw,-30vh);
-      -ms-transform: translate(-44vw,-30vh);
-          transform: translate(-44vw,-30vh);
+.infinite-animation .word.n-7 .tr {
+  -webkit-transform: translate(-5vw,38vh);
+      -ms-transform: translate(-5vw,38vh);
+          transform: translate(-5vw,38vh);
 }
-.page.me .word.n-8 {
+.infinite-animation .word.n-8 {
   -webkit-animation-delay: 16s;
           animation-delay: 16s;
 }
-.page.me .word.n-8 .tr {
-  -webkit-transform: translate(-13vw,36vh);
-      -ms-transform: translate(-13vw,36vh);
-          transform: translate(-13vw,36vh);
+.infinite-animation .word.n-8 .tr {
+  -webkit-transform: translate(-30vw,7vh);
+      -ms-transform: translate(-30vw,7vh);
+          transform: translate(-30vw,7vh);
 }
-.page.me .word.n-9 {
+.infinite-animation .word.n-9 {
   -webkit-animation-delay: 18s;
           animation-delay: 18s;
 }
-.page.me .word.n-9 .tr {
-  -webkit-transform: translate(-45vw,17vh);
-      -ms-transform: translate(-45vw,17vh);
-          transform: translate(-45vw,17vh);
+.infinite-animation .word.n-9 .tr {
+  -webkit-transform: translate(41vw,-28vh);
+      -ms-transform: translate(41vw,-28vh);
+          transform: translate(41vw,-28vh);
 }
-.page.me .word.n-10 {
+.infinite-animation .word.n-10 {
   -webkit-animation-delay: 20s;
           animation-delay: 20s;
 }
-.page.me .word.n-10 .tr {
-  -webkit-transform: translate(31vw,34vh);
-      -ms-transform: translate(31vw,34vh);
-          transform: translate(31vw,34vh);
+.infinite-animation .word.n-10 .tr {
+  -webkit-transform: translate(-43vw,-21vh);
+      -ms-transform: translate(-43vw,-21vh);
+          transform: translate(-43vw,-21vh);
 }
-.page.me .word.n-11 {
+.infinite-animation .word.n-11 {
   -webkit-animation-delay: 22s;
           animation-delay: 22s;
 }
-.page.me .word.n-11 .tr {
-  -webkit-transform: translate(-24vw,7vh);
-      -ms-transform: translate(-24vw,7vh);
-          transform: translate(-24vw,7vh);
+.infinite-animation .word.n-11 .tr {
+  -webkit-transform: translate(-19vw,-16vh);
+      -ms-transform: translate(-19vw,-16vh);
+          transform: translate(-19vw,-16vh);
 }
-.page.me .word.n-12 {
+.infinite-animation .word.n-12 {
   -webkit-animation-delay: 24s;
           animation-delay: 24s;
 }
-.page.me .word.n-12 .tr {
-  -webkit-transform: translate(-7vw,-7vh);
-      -ms-transform: translate(-7vw,-7vh);
-          transform: translate(-7vw,-7vh);
+.infinite-animation .word.n-12 .tr {
+  -webkit-transform: translate(-23vw,7vh);
+      -ms-transform: translate(-23vw,7vh);
+          transform: translate(-23vw,7vh);
 }
-.page.me .word.n-13 {
+.infinite-animation .word.n-13 {
   -webkit-animation-delay: 26s;
           animation-delay: 26s;
 }
-.page.me .word.n-13 .tr {
-  -webkit-transform: translate(-8vw,20vh);
-      -ms-transform: translate(-8vw,20vh);
-          transform: translate(-8vw,20vh);
+.infinite-animation .word.n-13 .tr {
+  -webkit-transform: translate(19vw,29vh);
+      -ms-transform: translate(19vw,29vh);
+          transform: translate(19vw,29vh);
 }
-.page.me .word.n-14 {
+.infinite-animation .word.n-14 {
   -webkit-animation-delay: 28s;
           animation-delay: 28s;
 }
-.page.me .word.n-14 .tr {
-  -webkit-transform: translate(45vw,-40vh);
-      -ms-transform: translate(45vw,-40vh);
-          transform: translate(45vw,-40vh);
+.infinite-animation .word.n-14 .tr {
+  -webkit-transform: translate(42vw,-28vh);
+      -ms-transform: translate(42vw,-28vh);
+          transform: translate(42vw,-28vh);
 }
-.page.me .word.n-15 {
+.infinite-animation .word.n-15 {
   -webkit-animation-delay: 30s;
           animation-delay: 30s;
 }
-.page.me .word.n-15 .tr {
-  -webkit-transform: translate(-31vw,-12vh);
-      -ms-transform: translate(-31vw,-12vh);
-          transform: translate(-31vw,-12vh);
+.infinite-animation .word.n-15 .tr {
+  -webkit-transform: translate(-34vw,-13vh);
+      -ms-transform: translate(-34vw,-13vh);
+          transform: translate(-34vw,-13vh);
 }
-.page.me .word.n-16 {
+.infinite-animation .word.n-16 {
   -webkit-animation-delay: 32s;
           animation-delay: 32s;
 }
-.page.me .word.n-16 .tr {
-  -webkit-transform: translate(14vw,30vh);
-      -ms-transform: translate(14vw,30vh);
-          transform: translate(14vw,30vh);
+.infinite-animation .word.n-16 .tr {
+  -webkit-transform: translate(-37vw,-32vh);
+      -ms-transform: translate(-37vw,-32vh);
+          transform: translate(-37vw,-32vh);
 }
-.page.me .word.n-17 {
+.infinite-animation .word.n-17 {
   -webkit-animation-delay: 34s;
           animation-delay: 34s;
 }
-.page.me .word.n-17 .tr {
-  -webkit-transform: translate(47vw,2vh);
-      -ms-transform: translate(47vw,2vh);
-          transform: translate(47vw,2vh);
+.infinite-animation .word.n-17 .tr {
+  -webkit-transform: translate(-17vw,-28vh);
+      -ms-transform: translate(-17vw,-28vh);
+          transform: translate(-17vw,-28vh);
 }
-.page.me .word.n-18 {
+.infinite-animation .word.n-18 {
   -webkit-animation-delay: 36s;
           animation-delay: 36s;
 }
-.page.me .word.n-18 .tr {
-  -webkit-transform: translate(-2vw,-17vh);
-      -ms-transform: translate(-2vw,-17vh);
-          transform: translate(-2vw,-17vh);
+.infinite-animation .word.n-18 .tr {
+  -webkit-transform: translate(-7vw,12vh);
+      -ms-transform: translate(-7vw,12vh);
+          transform: translate(-7vw,12vh);
 }
-.page.me .word.n-19 {
+.infinite-animation .word.n-19 {
   -webkit-animation-delay: 38s;
           animation-delay: 38s;
 }
-.page.me .word.n-19 .tr {
-  -webkit-transform: translate(-46vw,-26vh);
-      -ms-transform: translate(-46vw,-26vh);
-          transform: translate(-46vw,-26vh);
+.infinite-animation .word.n-19 .tr {
+  -webkit-transform: translate(-41vw,24vh);
+      -ms-transform: translate(-41vw,24vh);
+          transform: translate(-41vw,24vh);
 }
-.page.me .word.n-20 {
+.infinite-animation .word.n-20 {
   -webkit-animation-delay: 40s;
           animation-delay: 40s;
 }
-.page.me .word.n-20 .tr {
-  -webkit-transform: translate(43vw,12vh);
-      -ms-transform: translate(43vw,12vh);
-          transform: translate(43vw,12vh);
+.infinite-animation .word.n-20 .tr {
+  -webkit-transform: translate(-31vw,31vh);
+      -ms-transform: translate(-31vw,31vh);
+          transform: translate(-31vw,31vh);
 }
-.page.me .word.n-21 {
+.infinite-animation .word.n-21 {
   -webkit-animation-delay: 42s;
           animation-delay: 42s;
 }
-.page.me .word.n-21 .tr {
-  -webkit-transform: translate(50vw,5vh);
-      -ms-transform: translate(50vw,5vh);
-          transform: translate(50vw,5vh);
+.infinite-animation .word.n-21 .tr {
+  -webkit-transform: translate(-12vw,11vh);
+      -ms-transform: translate(-12vw,11vh);
+          transform: translate(-12vw,11vh);
 }
-.page.me .word.n-22 {
+.infinite-animation .word.n-22 {
   -webkit-animation-delay: 44s;
           animation-delay: 44s;
 }
-.page.me .word.n-22 .tr {
-  -webkit-transform: translate(8vw,-35vh);
-      -ms-transform: translate(8vw,-35vh);
-          transform: translate(8vw,-35vh);
+.infinite-animation .word.n-22 .tr {
+  -webkit-transform: translate(-26vw,-28vh);
+      -ms-transform: translate(-26vw,-28vh);
+          transform: translate(-26vw,-28vh);
 }
-.page.me .word.n-23 {
+.infinite-animation .word.n-23 {
   -webkit-animation-delay: 46s;
           animation-delay: 46s;
 }
-.page.me .word.n-23 .tr {
-  -webkit-transform: translate(29vw,-7vh);
-      -ms-transform: translate(29vw,-7vh);
-          transform: translate(29vw,-7vh);
+.infinite-animation .word.n-23 .tr {
+  -webkit-transform: translate(16vw,-19vh);
+      -ms-transform: translate(16vw,-19vh);
+          transform: translate(16vw,-19vh);
 }
-.page.me .word.n-24 {
+.infinite-animation .word.n-24 {
   -webkit-animation-delay: 48s;
           animation-delay: 48s;
 }
-.page.me .word.n-24 .tr {
-  -webkit-transform: translate(-21vw,21vh);
-      -ms-transform: translate(-21vw,21vh);
-          transform: translate(-21vw,21vh);
+.infinite-animation .word.n-24 .tr {
+  -webkit-transform: translate(-34vw,9vh);
+      -ms-transform: translate(-34vw,9vh);
+          transform: translate(-34vw,9vh);
 }
-.page.me .word.n-25 {
+.infinite-animation .word.n-25 {
   -webkit-animation-delay: 50s;
           animation-delay: 50s;
 }
-.page.me .word.n-25 .tr {
-  -webkit-transform: translate(-48vw,-34vh);
-      -ms-transform: translate(-48vw,-34vh);
-          transform: translate(-48vw,-34vh);
+.infinite-animation .word.n-25 .tr {
+  -webkit-transform: translate(-39vw,32vh);
+      -ms-transform: translate(-39vw,32vh);
+          transform: translate(-39vw,32vh);
 }
-.page.me .word.n-26 {
+.infinite-animation .word.n-26 {
   -webkit-animation-delay: 52s;
           animation-delay: 52s;
 }
-.page.me .word.n-26 .tr {
-  -webkit-transform: translate(-18vw,30vh);
-      -ms-transform: translate(-18vw,30vh);
-          transform: translate(-18vw,30vh);
+.infinite-animation .word.n-26 .tr {
+  -webkit-transform: translate(-3vw,34vh);
+      -ms-transform: translate(-3vw,34vh);
+          transform: translate(-3vw,34vh);
 }
-.page.me .word.n-27 {
+.infinite-animation .word.n-27 {
   -webkit-animation-delay: 54s;
           animation-delay: 54s;
 }
-.page.me .word.n-27 .tr {
-  -webkit-transform: translate(1vw,36vh);
-      -ms-transform: translate(1vw,36vh);
-          transform: translate(1vw,36vh);
+.infinite-animation .word.n-27 .tr {
+  -webkit-transform: translate(45vw,29vh);
+      -ms-transform: translate(45vw,29vh);
+          transform: translate(45vw,29vh);
 }
-.page.me .word.n-28 {
+.infinite-animation .word.n-28 {
   -webkit-animation-delay: 56s;
           animation-delay: 56s;
 }
-.page.me .word.n-28 .tr {
-  -webkit-transform: translate(-12vw,8vh);
-      -ms-transform: translate(-12vw,8vh);
-          transform: translate(-12vw,8vh);
+.infinite-animation .word.n-28 .tr {
+  -webkit-transform: translate(-4vw,-3vh);
+      -ms-transform: translate(-4vw,-3vh);
+          transform: translate(-4vw,-3vh);
 }
-.page.me .word.n-29 {
+.infinite-animation .word.n-29 {
   -webkit-animation-delay: 58s;
           animation-delay: 58s;
 }
-.page.me .word.n-29 .tr {
-  -webkit-transform: translate(12vw,7vh);
-      -ms-transform: translate(12vw,7vh);
-          transform: translate(12vw,7vh);
+.infinite-animation .word.n-29 .tr {
+  -webkit-transform: translate(10vw,-7vh);
+      -ms-transform: translate(10vw,-7vh);
+          transform: translate(10vw,-7vh);
 }
-.page.me .word.n-30 {
+.infinite-animation .word.n-30 {
   -webkit-animation-delay: 60s;
           animation-delay: 60s;
 }
-.page.me .word.n-30 .tr {
-  -webkit-transform: translate(30vw,15vh);
-      -ms-transform: translate(30vw,15vh);
-          transform: translate(30vw,15vh);
+.infinite-animation .word.n-30 .tr {
+  -webkit-transform: translate(-48vw,-11vh);
+      -ms-transform: translate(-48vw,-11vh);
+          transform: translate(-48vw,-11vh);
 }
 .share-page {
   position: absolute;
